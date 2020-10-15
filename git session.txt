@@ -1,0 +1,537 @@
+
+
+
+                                       Welcome  To   Git  Basics  !!!
+
+                            	 Content :  
+                                       Duration:
+                                                                     1.30 - 3.30      BR      4.00  -  6.00
+                                       pre-requisites:
+
+
+
+
+                                    GIT    -    Version Control System 
+                                               -    2005   ,  Linus Torvalds
+                                               -    open source 
+                                               -    important  tool  for  DevOps 
+
+
+
+                                     // popular   SDLC   Model 
+                                                        -  (OLD  MODEL)  waterfal  Model  (1950-60)  
+                                                        -  (CURRENT  MODEL)  agile model  (last 10 years)
+
+
+                                    DevOps     -    Tool   , technology  , process , culture 
+                                                                                                      to  develope our project  , release  or maintain  with high quality.
+                                                         -   we can achive automation
+
+ 
+                                                DevOps  =    Developement  (analyze+code+ build+test)         +     Operations  (release+deploy+monitor)
+
+                                                           - continuous  delivery
+                                                           - continuous feedback
+                                                           - requirement change in the model 
+                                                           - less developement time
+                                                           - less dev cost
+                                                           - high customer satisfaction
+                                                       
+
+
+                                                 Agile         -    support    rapid  soft  dev life cycle
+                                                                    -      developement(analyze+code+ build+test)     +  no operations
+
+                                                                    -   dev 1   --->  plan
+                                                                        dev 2  --->  coding
+                                                                         dev3   ---> test
+                                                                        ie   seperate team is responsible for seperate task
+                                                                    -  faster
+
+                                                 DevOps    -    support    rapid  soft  dev life cycle
+                                                                           developement(analyze+code+ build+test)     + operations  (release+deploy+monitor)
+
+                                                                    -     DevOps engineer is responsible for   dev  to operations
+                                                                    -    fater  with high quality
+
+
+                                                 As   A   DevOps   Engineer we have to know some popular  tool
+
+                                                                       1.  version  control system
+                                                                       2.   build tools
+                                                                       3.  configuration management tools.
+                                                                      .................  etc
+
+
+                                      verson control system
+		need of VCS
+		how VCS work ?
+		benefit of VCS
+		types of VCS
+		difference between centralized and distributed VCS
+
+
+                                           //   Version  Control System / Software Configuration Management
+                                                               -  its a  software  that is used to track changes  to a file or set of files .
+                                                               - every version of the project module should be maintained.
+
+                                                     
+                                                  E-Com Module  -   15  module 
+
+                                                           -->  create  one project module     -   v-1
+                                                           -->  demo to the client  and  client recommand some changes       1 2 3  4  5
+                                                           -->  team will update the project module   -  v-2
+                                                           -->   demo to the client  and  client recommand some changes    7  9
+                                                           -->   team will update the project module  -  v-3 
+                                                           -->    demo to the client  and  client recommand some changes    4  , 2 ,1
+                                                           -->   team will update the project module  -  v-4
+
+
+                                                  How   we will  maintain multiple version of a  project module  ?
+
+                                                            -  To maintain different version of the code we need VCS.
+                                                            - so that override of the code should not happpen
+                                                            - parallel dev should continue
+                                                            -  To manage  our code we need such type of source code management system 
+                                                                                         ie  version control system
+
+
+                                                   How   Version Control System  work    ?
+
+                                                            -  we will follw a tool to manage version.
+                                                            -  we can maintain multiple version for any documents
+
+                                                                dev  ----------->    code 
+                                                                project manager  ---------> excel documents 
+                                                                tester  --------------->  text doc
+
+                                                            -  commit  -  sending the file from workspace to repository  
+                                                            - checkout - the process of sending file from repository to workspace
+
+
+                                                    Benefit   Of   Version Control System 
+
+                                                               -   We  can choose  any version based on client requirement.
+                                                               -  for every version we can maintain metadata about the code.
+                                                               -  dev can share the code
+                                                               -  we can implement  access control to the files.
+
+
+                                                    Types   Of   Version Control  System 
+                                                                 1.  Centralized    VCS
+                                                                 2.   Distributed   VCS 
+
+
+                                                     //Centralized    VCS
+                                                                 -  one place where version control happen
+                                                                 -  All operations happen in a central repository.
+                                                                 - easy to setup and maintain 
+                                                                               ex.   CVS  , SVN  
+
+                                                    Limitation Of Centralized Version Control System
+                                                                  - Since total code stored at a single place 
+                                                                                something wrong will cause single point of failure.
+                                                                    if network is down then dev can not connect.
+                                                                   - as the number of file increase or team size increase then VCS have multiple problems.
+
+                                                         //  Distributed   VCS 
+                                                                    - ex  GIT   , Fossil  etc
+                                                                    - all version is maintained in a local repository.
+                                                                    - all work space have its own local repo
+                                                                    - each developer can do commit and checkout
+                                                                                            from local repo only
+                                                                    - push  - all the changes will marge into ws2 from ws1
+                                                                    - pull    - all the changes will marge into ws1 from ws2
+                                                                    - pull and push  - network is required
+                                                                    - commit and checkout - network is not required  
+
+                                                          //Distributed Version Control System with Repository 
+                                                                    - It is used to share our code to peer developer
+
+
+                                                                           Centralized    VCS                                                   Distributed        VCS
+
+                           commit and checkout   -    centralized  Repository                                       local repository
+                            No of Repository           -                 only one                                                       multiple
+                                                                               ex    SVN    , CSV                                                   ex   GIT , Mercurial
+                            network   down             -             NO                                                                         YES                                                       
+
+
+NEXT :
+GIT  introduction
+Features of Git
+Benefits of Git
+What is GitHub?
+
+Install Git on Windows
+Git Environment Setup
+Git Tools
+
+               
+                                                     //  GIT  
+ 				  -    Distributed Version Control System 
+                                                                               -    2005   ,  Linus Torvalds
+                                                                               -    open source 
+                                                                               -    important  tool  for  DevOps 
+                                                                               -   There  is no single point of failure since all the dev have local repository.
+                                                                               -   checkout and commit is performed locally.
+                                                                               -   staging  area
+					- in case of git , commit is a 2 step process
+                                                                                                -  commit            WS1 [Files ]      ---commit--->  {satging area} 
+                                                                                                - commit             {satging area} -------commit----->    [local repository]
+                                                                                                - it is a virtual  area
+                                                                                                - we can  double check any update before commit 
+                                                                                                - criptographic conversion is done in the staging area
+                                                                                                - encription and decription of data is done automatically .
+
+                                                                                                         Dev   System
+                                                                        ==========================================
+
+                                                                         WS1 [Files ]      ------commit----->    [local repository]
+                                                                                                      <-----checkout---- 
+
+
+                                                                              12 GB                                                                                                                  500MB
+
+                                                                           WS1 [Files ]      ---commit--->  {satging area} -------commit----->    [local repository]
+                                                                                                      <-----checkout----{Staging area} ------checkout----
+
+
+                                                            //Features  Of  Git
+                                                                           -  open source  .    license of GPL .
+                                                                           - Scallable  means handle more users with more documents
+                                                                           - Distributed
+                                                                           - Security -   SHA1
+                                                                           - staging  area
+
+
+                                                              //Benefit  Of  Git
+                                                                             - Save Time
+                                                                             - Off Line work 
+                                                                             - Undo Mistake
+                                                                             - track all the changes
+
+
+                                                              //GitHub
+                                                                             -  https://github.com/
+                                                                             - it is a repository  hosting service.
+                                                                              - support access control , dev collaboration
+                                                                             -  web application
+                                                                             - US based org
+                                                                             -  it offer  two major things
+                                                                                                        1.  distributed version control system
+                                                                                                        2.  source code management system
+
+                                                               //Features of  Github
+                                                                              
+                                                               // Git                                                                                  //      GitHub
+                                                              1. Distributed Version Control System                  1. it is cloud based tool
+                                                              2.  Dev have to install git tool locally                      2. It is online service to push the code
+                                                              3.  focus on version control and                              3. centralized  source code hosting
+                                                                    code sharing                              
+                                                              4.  command line tool                                                 4. using web 
+
+
+
+                                                               //Install   Git  on windows 
+                                                                                          1.  Git-2.27.0-64-bit.exe
+
+                                                               //Git Tool
+                                                                                      1.  Git Bash          2.  Git GUI     3.  gitk
+
+                                                                                       //Git Bash
+                                                                                                    -  command line tool for windows.
+                                                                                                    - by default available in the git package.
+
+                                                                                       //Git GUI
+                                                                                                    - It offer a graphical version of git command line.
+
+                                                                                        //  gitk
+                                                                                                     - it is used to visualize your project history
+
+                                                                  //Git Commands
+
+                                                            /> git init gcpgit      // created git repo
+ 
+                                                            />  git   config  --global  user.name   "Amitava"    // name for git commit
+          
+                                                            />  git   config  --global  user.email   "amitavagc@gmail.com"  //email for git commit 
+
+                                                             /> git config  -list    // check settings
+
+                                                              /> git  clone  https://github.com/Amit202020/Spring-Framework.git
+
+                                                              /> git   add  abc.txt   // adding file in the git
+
+                                                               commit
+
+                                                             /> git    commit  -m  "code is classfree"
+                                                              /> git  commit  -a 
+
+                                                                status
+
+                                                               /> git status     //give the status of the working drectory and staging area details.
+                                                               
+                                                                push
+
+                                                            /> git  push origin  master  // upload local repository content to remote repository.
+ 
+
+                                                                 pull 
+
+                                                              /> git pull   https://github.com/Amit202020/Spring-Framework.git 
+                                                                                                               // upload remote repository content to local repository.
+
+                                         ---------------------------------------------------------------------------------------------------
+                                         S-1    Create  Git  repository.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                  
+
+                                              
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+TOPICS :
+
+introduction
+
+verson control system
+need of VCS
+how VCS work ?
+benefit of VCS
+types of VCS
+difference between centralized and distributed VCS
+
+GIT  introduction
+Features of Git
+Benefits of Git
+What is GitHub?
+
+Install Git on Windows
+Git Environment Setup
+Git Tools
